@@ -1,0 +1,16 @@
+[package]
+name = "psirust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "psirust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+ndarray = "0.15"
+ndarray-rand = "0.14"
+information = "0.1.0"
+approx = "0.5"
+numpy = "0.20.0"
